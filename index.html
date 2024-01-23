@@ -77,31 +77,31 @@
 
 
         <!-- slider or carousel section start -->
-        <div class="carousel w-full h-[550px] mt-12">
+        <div class="carousel w-full h-[200px] lg:h-[550px] mt-12">
             <div id="slide1" class="carousel-item relative w-full rounded-2xl">
               <img src="./images/slider.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0">
                 <a href="#slide4" class="btn btn-circle">❮</a> 
                 <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
             </div> 
             <div id="slide2" class="carousel-item relative w-full rounded-2xl">
               <img src="./images/slider.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0">
                 <a href="#slide1" class="btn btn-circle">❮</a> 
                 <a href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div> 
             <div id="slide3" class="carousel-item relative w-full rounded-2xl">
                 <img src="./images/slider.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0">
                 <a href="#slide2" class="btn btn-circle">❮</a> 
                 <a href="#slide4" class="btn btn-circle">❯</a>
               </div>
             </div> 
             <div id="slide4" class="carousel-item relative w-full rounded-2xl">
                 <img src="./images/slider.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0">
                 <a href="#slide3" class="btn btn-circle">❮</a> 
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
@@ -214,15 +214,19 @@
                 <div>
                     <div class="hero h-[450px] rounded-2xl mt-4" style="background-image: url('./images/program-section-3.png');">
                         <div class="hero-overlay bg-opacity-60"></div>
-                        <div class="hero-content text-center text-neutral-content">
-                          <div class="max-w-md">
+
+                        <div class="flex flex-col justify-end items-end">
+                          <div>
                             <h1 class="mb-5 text-3xl font-extrabold text-white">Professional Program</h1>
                             <p class="mb-5 text-[16px] font-medium text-[#FFFFFF]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
                             enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
                             <button class="btn btn-primary bg-[#FF4240]  rounded-lg outline-none border-none text-center text-white text-2xl font-bold">Register Now!</button>
                           </div>
                         </div>
-                      </div>
+                       
+                    </div>
+
+                    
                 </div>
             </div>
         </div>
@@ -452,11 +456,11 @@
 
             <div>
                 <div class=" grid grid-cols-1 lg:grid-cols-2 card card-side shadow-xl">
-                    <!-- <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie"/></figure> -->
+                    <figure><img class="rounded-2xl bg-cover bg-no-repeat w-full m-10 h-[260px] lg:h-[516px]" src="./images/question.png" alt="Movie"/></figure>
 
-                    <div class="justify-center items-center rounded-2xl bg-cover bg-no-repeat w-full">
+                    <!-- <div class="justify-center items-center rounded-2xl bg-cover bg-no-repeat w-full">
                         <img src="./images/question.png" alt="">
-                    </div>
+                    </div> -->
 
                     <div class="card-body w-full">
                         <div class="collapse collapse-plus">
@@ -535,121 +539,145 @@
 
         <!-- Get in Touch Section Start -->
         <div >
-            <div class="text-center mt-16">
+            <div class="text-center mt-16 mb-10">
                 <h3 class="text-[36px] font-extrabold text-[#131318] mb-4">Get In Touch</h3>
                 <p class="text-[16px] font-medium text-[#13131899] mb-3">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.  </p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2">
-                <div class="bg-white grid grid-cols-1 gap-4">
-                    <div class="bg-[#BCED6D1A] rounded-2xl w-96 h-56">
-                        <img src="./images/3d-accept 1.png" alt="">
-                        <p> <span class="text-base font-normal">
-                            Phone Number :
-                        </span>  <br>
-                            <span class="text-[#131318] text-[18px] font-extrabold">(+62) 123-321-543</span></p>
-                    </div>
-    
-                    <div class="bg-[#FDDD5F1A] rounded-2xl w-96 h-56">
-                        <img src="./images/direct 1.png" alt="">
-                        <p> <span class="text-base font-normal">
-                            Email : 
-                            </span>  <br>
-                                <span class="text-[#131318] text-[18px] font-extrabold">hockeys@support.com</span></p>
-                    </div>
-    
-                    <div class="bg-[#629CF31A] rounded-2xl w-96 h-56">
-                        <img src="./images/google-maps 1.jpg" alt="">
-                            <p> <span class="text-base font-normal">
-                                Location : 
-                            </span>  <br>
-                                <span class="text-[#131318] text-[18px] font-extrabold">152/1 Mohakhali Wireless Gate</span></p>
-                    </div>
-                </div>
 
-                <div>
+            <!-- FIRST PART OF GET IN TOUCH -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 w-full <div class="grid grid-cols-1 lg:grid-cols-3 w-ful >
+              <div class="bg-white grid grid-cols-1 p-16">
+                  <div class="bg-[#BCED6D1A] rounded-2xl w-full mb-6 p-8">
+                      <img class="mb-3" src="./images/3d-accept 1.png" alt="">
+                      <p> <span class="text-base font-normal text-[#0D0D1242]">
+                          Phone Number :
+                      </span>  <br>
+                          <span class="text-[#131318] text-[18px] font-extrabold">(+62) 123-321-543</span></p>
+                  </div>
+  
+                  <div class="bg-[#FDDD5F1A] rounded-2xl w-full mb-6 p-8">
+                      <img class="mb-3"  src="./images/direct 1.png" alt="">
+                      <p> <span class="text-base font-normal text-[#0D0D1242]">
+                          Email : 
+                          </span>  <br>
+                              <span class="text-[#131318] text-[18px] font-extrabold">hockeys@support.com</span></p>
+                  </div>
+  
+                  <div class="bg-[#629CF31A] rounded-2xl w-full mb-6 p-8">
+                      <img class="mb-3"  src="./images/google-maps 1.jpg" alt="">
+                          <p> <span class="text-base font-normal text-[#0D0D1242]">
+                              Location : 
+                          </span>  <br>
+                              <span class="text-[#131318] text-[18px] font-extrabold">152/1 Mohakhali Wireless Gate</span></p>
+                  </div>
+              </div> 
+
+                <!-- second part of GET IN TOUCH -->
+
+                <div class="col-span-2">
                     <form action="">
-                        <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div>
+                          <div class="flex flex-col justify-between lg:flex-row">
+                            <div>
+                              <p class="text-[#131318] text-xl font-bold mb-2">Your Name:</p> 
+                              <input class="bg-[#13131808] p-4 rounded-xl" type="text" name="" placeholder="Enter your name" id="">
+                            </div>
+  
+                           <div>
+                            <p class="text-[#131318] text-xl font-bold mb-2">Your Email:</p> 
+                            <input class="bg-[#13131808] p-4 rounded-xl" type="email" name="" placeholder="Enter your email" id="">
+                           </div>
+                          </div>
+
+                        <div class="flex flex-col justify-between lg:flex-row ">
                           <div>
-                            <p class="text-[#131318] text-xl font-bold">Your Name:</p> <input type="text" name="" placeholder="Enter your full name" id="">
+                            <p class="text-[#131318] text-xl font-bold mb-2">Subect:</p> 
+                            <input class="bg-[#13131808] p-4 rounded-xl" type="text" name="" placeholder="Enter your subject" id="">
                           </div>
 
                          <div>
-                          <p class="text-[#131318] text-xl font-bold">Your Email:</p> <input type="email" name="" placeholder="Enter your email" id="">
+                          <p class="text-[#131318] text-xl font-bold mb-2">Phone Number:</p> 
+                          <input class="bg-[#13131808] p-4 rounded-xl" type="text" name="" placeholder="Enter phone number" id="">
                          </div>
                         </div>
+
+                      <div class="flex flex-col py-4">
+                        <p class="text-[#131318] text-xl font-bold mb-2">Message:</p> 
+                        <textarea class="textarea textarea-info w-full h-[370px] bg-[#13131808] p-4 rounded-xl" placeholder="Write Your Message"></textarea>
+                      </div>     
+
                         <div>
-                          <p class="text-[#131318] text-xl font-bold">Subject:</p> <input type="text" name="" placeholder="Enter your subject" id="">
-
-                          <p class="text-[#131318] text-xl font-bold">Phone Number: </p> <input type="number" name="" placeholder="Enter your phone number" id="">
-
+                          <button class="btn btn-xs btn-block sm:btn-sm md:btn-md lg:btn-lg bg-red-500 rounded-xl border border-[#FF4240]-500 outline-none border-none text-[#fff] text-center text-2xl font-bold sm:p-6">Send Message</button>
                         </div>
-                        Message: <textarea name="" id="" cols="30" rows="10"></textarea>
-                        <input type="button" value="Send Message">
 
                     </form>
                 </div>
             </div>
-
-            <!-- Get In Touch Section End -->
-
-            <!-- Social Media Start -->
-           <div>
-                <div class="text-center mt-16">
-                    <h3 class="text-[24px] font-extrabold text-[#131318] mb-4">Social Media</h3>
-                </div>
-
-                <div class="flex justify-center items-center">
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                  </div>
-           </div>
-            <!-- Social Media End -->
-
         </div>
+
+         <!-- Social Media Start -->
+         <div class="bg-[#13131808] rounded-2xl py-8 mt-16">
+          <div class="text-center">
+              <h3 class="text-[24px] font-extrabold text-[#131318] my-6">Social Media</h3>
+          </div>
+
+          <div class="flex justify-center items-center">
+              <a href=""><i class="fa-brands fa-twitter mr-4 "></i></a>
+              <a href=""><i class="fa-brands fa-facebook mr-4"></i></a>
+              <a href=""><i class="fa-brands fa-instagram mr-4"></i></a>
+              <a href=""><i class="fa-brands fa-github mr-4"></i></a>
+            </div>
+     </div>
+      <!-- Social Media End -->
         <!-- Get in Touch Section End -->
     </main>
     <!-- Main End -->
 
     <!-- Foooter Start -->
-    <footer class="footer p-10  text-base-content">
-        <nav>
-            <header class="footer-title">Get In Touch</header> 
-            <p>Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+    <footer class="footer justify-center items-center lg:justify-between p-10 mt-16 bg-base-200 text-base-content">
+      <aside class="col-span-2 lg:col-span-1 ">
+        <header class="footer-title text-[#FFFFFF] text-3xl font-semibold">Get In Touch</header> 
+            <p class="text-[#FFFFFF99] text-base font-medium w-80">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
 
-            <div>
-                <img src="./images/gmail.png" alt="">
+            <div class="flex">
+                <img class="mr-2" src="./images/gmail.png" alt="">
                 hockeys@support.com
             </div>
 
-            <div>
-                <img src="./images/call.png" alt="">
+            <div class="flex">
+                <img class="mr-2" src="./images/call.png" alt="">
                 (+62) 123-321-543
             </div>
-        </nav>
-        <nav>
-          <header class="footer-title">Services</header> 
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
-        </nav> 
-        <nav>
-          <header class="footer-title">Company</header> 
+      </aside> 
+      <nav class="col-span-1">
+        <header class="footer-title text-[#FFFFFF] text-lg font-bold">Company</header>
           <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
-        </nav> 
-        <nav>
-          <header class="footer-title">Legal</header> 
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
-        </nav> 
-      </footer>
+          <a class="link link-hover">Leadership</a>
+          <a class="link link-hover">Careers</a>
+          <a class="link link-hover">News & Article</a>
+          <a class="link link-hover">Legal Notice</a>
+      </nav> 
+
+      <nav class="col-span-1">
+        <header class="footer-title text-[#FFFFFF] text-lg font-bold">Support</header> 
+          <a class="link link-hover">Help Center</a>
+          <a class="link link-hover">FAQ</a>
+          <a class="link link-hover">Ticket Support</a>
+          <a class="link link-hover">Contact Us</a>
+      </nav> 
+
+      
+        <nav class="flex flex-col footer-center">
+          <header class="footer-title text-[#FFFFFF] text-lg font-bold">Services</header> 
+          <a class="link link-hover">Academy</a>
+          <a class="link link-hover">Group Lesson</a>
+          <a class="link link-hover">Private Lesson</a>
+          <a class="link link-hover">Hockeys for kids</a>
+          <a class="link link-hover">Hockeys for Adult</a>
+
+    </footer>
     <!-- Footer End -->
+
 </body>
 </html>
