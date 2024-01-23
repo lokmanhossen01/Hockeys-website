@@ -111,7 +111,7 @@
     </header>
     <!-- Header Section End -->
 
-    <main>
+    <main class="container mx-auto">
         <!-- Our Professional Club Section Start -->
         <div>
             <div class="text-center mt-16">
@@ -237,7 +237,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                 <!-- card 1 start -->
-                <div class="card card-side  shadow-xl p-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 card card-side  shadow-xl p-4">
                    <figure><img src="./images/product/p-1.png" alt="Movie"/></figure>
                     <div class="card-body">
                         <div class="flex">
@@ -271,7 +271,7 @@
                   <!-- card 1 end -->
 
                 <!-- card 2 start -->
-                <div class="card card-side  shadow-xl p-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  card card-side  shadow-xl p-4">
                    <figure><img src="./images/product/p-2.png" alt="Movie"/></figure>
                     <div class="card-body">
                         <div class="flex">
@@ -305,7 +305,7 @@
                   <!-- card 2 end -->
 
                 <!-- card 3 start -->
-                <div class="card card-side  shadow-xl p-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  card card-side  shadow-xl p-4">
                    <figure><img src="./images/product/p-3.png" alt="Movie"/></figure>
                     <div class="card-body">
                         <div class="flex">
@@ -339,7 +339,7 @@
                   <!-- card 3 end -->
 
                 <!-- card 4 start -->
-                <div class="card card-side  shadow-xl p-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 card card-side  shadow-xl p-4">
                    <figure><img src="./images/product/p-4.png" alt="Movie"/></figure>
                     <div class="card-body">
                         <div class="flex">
@@ -373,7 +373,7 @@
                   <!-- card 4 end -->
 
                 <!-- card 5 start -->
-                <div class="card card-side  shadow-xl p-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  card card-side  shadow-xl p-4">
                    <figure><img src="./images/product/p-5.png" alt="Movie"/></figure>
                     <div class="card-body">
                         <div class="flex">
@@ -407,7 +407,7 @@
                   <!-- card 5 end -->
 
                 <!-- card 6 start -->
-                <div class="card card-side  shadow-xl p-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 card card-side  shadow-xl p-4">
                    <figure><img src="./images/product/p-6.png" alt="Movie"/></figure>
                     <div class="card-body">
                         <div class="flex">
@@ -454,11 +454,11 @@
                 <div class=" grid grid-cols-1 lg:grid-cols-2 card card-side shadow-xl">
                     <!-- <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie"/></figure> -->
 
-                    <div>
+                    <div class="justify-center items-center rounded-2xl bg-cover bg-no-repeat w-full">
                         <img src="./images/question.png" alt="">
                     </div>
 
-                    <div class="card-body">
+                    <div class="card-body w-full">
                         <div class="collapse collapse-plus">
                             <input type="radio" name="my-accordion-3" checked="checked" /> 
 
@@ -569,16 +569,22 @@
 
                 <div>
                     <form action="">
-                        Your Name: <input type="text" name="" placeholder="Enter your full name" id="">
+                        <div class="grid grid-cols-1 lg:grid-cols-2">
+                          <div>
+                            <p class="text-[#131318] text-xl font-bold">Your Name:</p> <input type="text" name="" placeholder="Enter your full name" id="">
+                          </div>
 
-                        Your Email: <input type="email" name="" placeholder="Enter your email" id="">
+                         <div>
+                          <p class="text-[#131318] text-xl font-bold">Your Email:</p> <input type="email" name="" placeholder="Enter your email" id="">
+                         </div>
+                        </div>
+                        <div>
+                          <p class="text-[#131318] text-xl font-bold">Subject:</p> <input type="text" name="" placeholder="Enter your subject" id="">
 
-                        Subject: <input type="text" name="" placeholder="Enter your subject" id="">
+                          <p class="text-[#131318] text-xl font-bold">Phone Number: </p> <input type="number" name="" placeholder="Enter your phone number" id="">
 
-                        Phone Number: <input type="number" name="" placeholder="Enter your phone number" id="">
-
-                        Message: 
-
+                        </div>
+                        Message: <textarea name="" id="" cols="30" rows="10"></textarea>
                         <input type="button" value="Send Message">
 
                     </form>
